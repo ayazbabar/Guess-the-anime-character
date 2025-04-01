@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess the Anime Character</title>
+  <style>
+    body {
+      background-color: #0a0c11;
+      color: rgb(204, 245, 248);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding-top: 30px;
+
+    }
+
+    .container {
+      margin-top: 5%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px 15px;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+
+    }
+
+    .img img {
+      height: 400px;
+
+    }
+
+    #input {
+      font-size: 1.5em;
+      padding: 10px 15px;
+      background-color: #191e2b;
+      border: none;
+      border-radius: 30px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: rgb(204, 245, 248);
+    }
+
+    .next {
+      font-size: 1.5em;
+      border: none;
+      background-color: rgb(27, 192, 192);
+      color: #191e2b;
+      border-radius: 30px;
+      padding: 10px 15px;
+
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    }
+
+    #win {
+      font-size: 2em;
+    }
+
+    .inpbut {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 10px;
+      margin-top: 10%;
+
+    }
+
+    .next {
+      cursor: pointer;
+    }
+
+    .next:hover {
+      background-color: rgb(19, 139, 139);
+    }
+
+    .next:active {
+      background-color: rgb(14, 94, 94);
+    }
+
+    .rewardimages {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    /* Individual reward images */
+    .rewardimages img {
+      width: 300px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+
+
+<body>
+
+
+  <div class="container">
+    <h1 id="head">Anime Guess Game</h1>
+    <div class="img" id="images"><img id="img" src="" alt="Anime characters"></div>
+
+    <div class="inpbut">
+      <input type="text" id="input" placeholder="Enter the name">
+      <button class="next" id="next">next</button>
+
+    </div>
+    <h3 id="win"></h3>
+    <div class="rewardimages" id="rewardimages"></div>
+  </div>
+  <script src="animechar.js"></script>
+</body>
+
+</html>
